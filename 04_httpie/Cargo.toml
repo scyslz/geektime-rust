@@ -24,3 +24,5 @@ mime = "0.3" # 处理 mime 类型
 reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] } # HTTP 客户端
 tokio = { version = "1", features = ["full"] } # 异步处理库
 syntect = "4"
+onig = "6.4.0"
+onig_sys = "69.8.1"

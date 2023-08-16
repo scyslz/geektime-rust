@@ -1,14 +1,17 @@
 const PI: f64 = 3.1415926;
 static V: Vec<u8> = Vec::new();
-
+static PI2:f64 =123.12;
 #[allow(dead_code)]
 fn where_is_pi() {
     let r = 10f64;
+    let V2: Vec<u8> = Vec::new();
     println!(
-        "addr(r): {:p}, addr(PI): {:p}, addr(PI1): {:p}, area is: {}",
+        "addr(r): {:p}, addr(PI): {:p}, addr(PI2){:p} addr(V): {:p}, addr(V){:p} area is: {}",
         &r,
         &PI,
+        &PI2,
         &V,
+        &*V,
         PI * r * r
     );
 }
